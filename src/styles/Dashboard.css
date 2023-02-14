@@ -1,0 +1,66 @@
+.dashboard_container {
+    border-radius: 8px;
+    padding: 1em;
+    border: 2px solid black;
+    margin: 2em 1em;
+    display: grid;
+    gap: 1em;
+}
+
+.dashboard_fixed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dragon_handler_card {
+    padding: .5em;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.dragon_handler_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-icon {
+    padding-right: .25em;
+    color: white;
+}
+
+.description {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.label {
+    margin: 8px 8px;
+}
+
+.signOut-button{
+    margin-top: 1em;
+}
+
+@media (min-width: 600px) {
+    .dashboard_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard_fixed {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 900px) {
+    .dashboard_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .dashboard_fixed {
+        grid-column: span 3;
+    }
+}

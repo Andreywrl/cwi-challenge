@@ -1,0 +1,47 @@
+.new-dragon-card {
+    border-radius: 8px;
+    margin: 1em;
+}
+
+.new-dragon-inputs {
+    width: 90%;
+    margin: auto;
+}
+
+.new-dragon-field {
+    margin-bottom: 1.5em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.new-dragon-buttons {
+    border-radius: 8px;
+    padding: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-icon {
+    padding-right: .25em;
+    color: white;
+}
+
+.title {
+    margin: 1em 1em;
+}
+
+.label{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+input{
+    width: 100%;
+}
+
+.return-button{
+    margin: auto;
+}

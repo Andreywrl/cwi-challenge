@@ -1,0 +1,54 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background-image: linear-gradient(92.88deg, #CC0502 9.16%, #000 43.89%, #000 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    padding: .25em .5em;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:hover {
+    box-shadow: #FF0602 0 1px 30px;
+    transition-duration: .1s;
+}
+
+input {
+    border: 1px solid black;
+    color: #000;
+    padding: .25em;
+    border-radius: 8px;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(../assets/login_background.jpg);
+}
+
+.bg-glass {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
