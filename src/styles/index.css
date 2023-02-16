@@ -6,27 +6,27 @@
 }
 
 button {
-    background-image: linear-gradient(92.88deg, #CC0502 9.16%, #000 43.89%, #000 64.72%);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(158, 0, 5, 1) 15%, rgba(150, 1, 13, 1) 35%, rgba(51, 9, 9, 1) 60%, rgba(23, 3, 3, 1) 85%, rgba(0, 0, 0, 1) 100%);
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
     color: #FFFFFF;
-    padding: .25em .5em;
+    padding: .5em .5em;
     cursor: pointer;
     flex-shrink: 0;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-    transition: all .5s;
+    transition: all 1s;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
 }
 
 button:hover {
-    box-shadow: #FF0602 0 1px 30px;
-    transition-duration: .1s;
+    box-shadow: #FF0602 0 2px 25px;
+    transition-duration: .4s;
 }
 
 input {
@@ -36,11 +36,19 @@ input {
     border-radius: 8px;
 }
 
+body::-webkit-scrollbar {
+    width: 10px
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #800000;
+}
+
 .App {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-size: cover;
     background-image: url(../assets/login_background.jpg);
 }
@@ -48,7 +56,41 @@ input {
 .bg-glass {
     background: rgba(255, 255, 255, 0.35);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(13.5px);
-    -webkit-backdrop-filter: blur(13.5px);
+    backdrop-filter: blur(16.5px);
+    -webkit-backdrop-filter: blur(16.5px);
     border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.loading_screen {
+    background-color: white;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

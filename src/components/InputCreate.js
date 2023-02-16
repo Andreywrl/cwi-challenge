@@ -1,4 +1,4 @@
-export default function CustomCreate({ label, value, onChange }) {
+export default function InputCreate({ label, value, onChange }) {
 
     return (
         <div className='new-dragon-field'>

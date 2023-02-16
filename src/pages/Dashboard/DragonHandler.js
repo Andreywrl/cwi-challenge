@@ -1,10 +1,8 @@
 import { faMagnifyingGlass, faPen, faTrash } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import CustomButton from "../../components/CustomButton";
-import CustomDescription from "../../components/CustomDescription";
-import api from "../../services/api";
+import Button from "../../components/Button";
+import DragonDescription from "../../components/DragonDescription";
 import { deleteDragon, putDragon } from "../../services/Services";
 
 export default function DragonHandler({ dragon, refresh }) {
@@ -51,31 +49,31 @@ export default function DragonHandler({ dragon, refresh }) {
         <div className="dragon_handler_card">
             <div className="dragon_handler_content">
 
-                <CustomDescription label="Data de criação: " data={dragon.createdAt} />
+                <DragonDescription label="Data de criação: " data={dragon.createdAt} />
 
-                <CustomDescription label="Nome: " input value={name} onChange={e => setName(e.target.value)} />
+                <DragonDescription label="Nome: " input value={name} onChange={e => setName(e.target.value)} />
 
-                <CustomDescription label="Tipo: " input value={name} onChange={e => setType(e.target.value)} />
+                <DragonDescription label="Tipo: " input value={type} onChange={e => setType(e.target.value)} />
 
-                <CustomDescription label="Historias: " input value={histories} onChange={e => setHistories(e.target.value)} />
+                <DragonDescription label="Historias: " input value={histories} onChange={e => setHistories(e.target.value)} />
 
             </div>
             <div className="dragon_handler_buttons">
-                <CustomButton className="button-view"
+                <Button className="button-view"
                     icon={faMagnifyingGlass}
-                    data="Visualizar"
+                    text="Visualizar"
                     onClick={() => navigate(`/DragonDetails/${id}`)}
                 />
 
-                <CustomButton className="button-view"
+                <Button className="button-view"
                     icon={faPen}
-                    data="Editar"
+                    text="Editar"
                     onClick={() => handleEditDragon()}
                 />
 
-                <CustomButton className="button-view"
+                <Button className="button-view"
                     icon={faTrash}
-                    data="Excluir"
+                    text="Excluir"
                     onClick={() => handleDeleteDragon()}
                 />
             </div>

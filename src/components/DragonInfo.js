@@ -1,4 +1,4 @@
-export default function CustomDragonDetail({ data, label }) {
+export default function DragonInfo({ data, label }) {
 
     return (
         <div className='dragon-details-field'>

@@ -1,18 +1,19 @@
-import { useState } from "react"
-import CustomButton from "../../components/CustomButton";
+import Button from "../../components/Button";
 import { useAuth } from "../../contexts/AuthProvider";
 import localLogin from "../../services/localLogin";
+import dragonLogo from "../../assets/Dragons.png";
+import { Form, Formik } from "formik";
+import ValidationSchema from "../../components/validation/ValidationSchema";
+import LoginField from "../../components/LoginField";
+import { useCallback } from "react";
 
 export default function LoginCard() {
 
     const { signIn } = useAuth();
 
-    const [user, setUser] = useState('');
-    const [password, setPassword] = useState('');
+    const handleSubmit = useCallback((user, password) => {
 
-    function handleSubmit() {
-
-        if (user !== '' && password !== '') {
+        if (user && password) {
 
             const response = localLogin(user, password);
 
@@ -22,26 +23,36 @@ export default function LoginCard() {
                 alert(response.message);
             };
 
-        } else {
-            alert('Por favor, preencha todos os campos para acessar sua conta!');
         };
-    };
+
+    }, []);
 
     return (
-        <div className="login_card bg-glass">
-
-            <h1 className="login_title">
-                LOGIN
-            </h1>
+        <div className="login_card">
+            <img className="login-logo" src={dragonLogo} alt="Logo redonda na tela de login, contendo o texto 'Dragons'." />
             <p className="login_description">
-                Conheça os mais incríveis dragões
+                Conheça os mais incríveis dragões!
             </p>
+            <Formik
+                initialValues={{
+                    user: '',
+                    password: ''
+                }}
+                validationSchema={ValidationSchema}
+                onSubmit={values => {
+                    handleSubmit(values.user, values.password)
+                }}
+            >
+                {({ errors, touched }) => (
+                    <Form>
+                        <LoginField user placeholder="Usuário" props={{ errors, touched }} />
 
-            <input className="login_field" placeholder="Usuário" type="email" value={user} onChange={e => setUser(e.target.value)} />
+                        <LoginField password placeholder="Senha" props={{ errors, touched }} />
 
-            <input className="login_field" placeholder="Senha" type="password" value={password} onChange={e => setPassword(e.target.value)} />
-
-            <CustomButton className="login_button" onClick={() => handleSubmit()} data="Entrar" />
+                        <Button type="submit" className="login_button" onClick={() => handleSubmit()} text="Entrar" />
+                    </Form>
+                )}
+            </Formik>
         </div>
     )
 

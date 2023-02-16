@@ -1,9 +1,0 @@
-.layout{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.layout_content_centralizer {
-    max-width: 1280px;
-}

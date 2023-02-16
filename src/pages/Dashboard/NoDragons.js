@@ -8,9 +8,6 @@ export default function NoDragons() {
             <p>
                 É, talvez na próxima vida você alcance a nobreza desses seres.
             </p>
-            <button>
-                Voltar
-            </button>
         </div>
     )
 };

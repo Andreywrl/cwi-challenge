@@ -19,3 +19,8 @@ export function putDragon(id, data) {
 export function deleteDragon(id) {
     return api.delete(id)
 };
+
+/* Cria um dragão: */
+export function createDragon(data) {
+    return api.post('/', data)
+};
