@@ -6,8 +6,9 @@ No diretório deste projeto, você pode executar:
 
 ## Credenciais de Acesso:
 
-Usuário: tester
-Senha: t35t3r
+Usuário: **tester**
+
+Senha: **t35t3r**
 
 ## Descrição do projeto:
 
