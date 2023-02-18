@@ -10,6 +10,9 @@ Usuário: **tester**
 
 Senha: **@t35t3r10**
 
+## Preview do projeto:
+![Gif apresentando o projeto](https://drive.google.com/file/d/1ln5FDyfuh0xTwsNwlLO3_6XKvdKPphXm/view?usp=sharing)
+
 ## Descrição do projeto:
 
 ### Página de login:
@@ -82,7 +85,6 @@ Este projeto está sendo visualizado em meu repositório público do GitHub, int
 Usuário: **tester**
 
 Senha: **@t35t3r10**
-
 
 ### Obrigado por chegar até aqui!
 ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
