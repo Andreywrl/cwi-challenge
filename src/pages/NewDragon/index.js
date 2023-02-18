@@ -51,11 +51,11 @@ export default function NewDragon() {
             </div>
             <div className='buttons'>
 
-                <Button onClick={() => handleCreate()} icon={faPlus} text="Criar" />
+                <Button onClick={() => navigate('/')} icon={faHouse} text="Voltar" />
 
                 <Button onClick={() => handleReset()} icon={faBroom} text="Limpar" />
 
-                <Button onClick={() => navigate('/')} icon={faHouse} text="Voltar" />
+                <Button onClick={() => handleCreate()} icon={faPlus} text="Criar" />
 
             </div>
         </div>

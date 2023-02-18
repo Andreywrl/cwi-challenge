@@ -59,23 +59,25 @@ export default function DragonHandler({ dragon, refresh }) {
 
             </div>
             <div className="buttons">
-                <Button 
-                    icon={faMagnifyingGlass}
-                    text="Visualizar"
-                    onClick={() => navigate(`/DragonDetails/${id}`)}
+
+                <Button
+                    icon={faTrash}
+                    text="Excluir"
+                    onClick={() => handleDeleteDragon()}
                 />
 
-                <Button 
+                <Button
                     icon={faPen}
                     text="Editar"
                     onClick={() => handleEditDragon()}
                 />
 
-                <Button 
-                    icon={faTrash}
-                    text="Excluir"
-                    onClick={() => handleDeleteDragon()}
+                <Button
+                    icon={faMagnifyingGlass}
+                    text="Visualizar"
+                    onClick={() => navigate(`/DragonDetails/${id}`)}
                 />
+
             </div>
         </div>
     );
