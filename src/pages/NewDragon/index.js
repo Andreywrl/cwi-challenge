@@ -13,11 +13,10 @@ export default function NewDragon() {
     const [stories, setStories] = useState('');
 
     const navigate = useNavigate();
-    const histories = '';
 
     async function handleCreate() {
         await createDragon({
-            histories,
+            histories: stories,
             name,
             type,
         })

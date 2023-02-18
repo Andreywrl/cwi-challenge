@@ -3,7 +3,7 @@ import { useAuth } from "../../contexts/AuthProvider";
 import localLogin from "../../services/localLogin";
 import dragonLogo from "../../assets/Dragons.png";
 import { Form, Formik } from "formik";
-import ValidationSchema from "../../components/validation/ValidationSchema";
+import ValidationSchema from "../../components/validation";
 import LoginField from "../../components/LoginField";
 import { useCallback } from "react";
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";

@@ -12,15 +12,15 @@ export default function LoginField({ props, placeholder, user, password }) {
             {
                 user ?
                     props.errors.user && props.touched.user ?
-                        <div className="warning">
+                        <p className="warning">
                             {props.errors.user}
-                        </div>
+                        </p>
                         : null
                     :
                     props.errors.password && props.touched.password ?
-                        <div className="warning">
+                        <p className="warning">
                             {props.errors.password}
-                        </div>
+                        </p>
                         : null
             }
         </>
