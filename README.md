@@ -8,7 +8,7 @@ No diretório deste projeto, você pode executar:
 
 Usuário: **tester**
 
-Senha: **t35t3r**
+Senha: **@t35t3r10**
 
 ## Descrição do projeto:
 
@@ -81,4 +81,4 @@ Este projeto está sendo visualizado em meu repositório público do GitHub, int
 
 Usuário: **tester**
 
-Senha: **t35t3r**
+Senha: **@t35t3r10**
