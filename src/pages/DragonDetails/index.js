@@ -32,15 +32,15 @@ export default function DragonDetails() {
         isLoading ?
             <LoadingScreen />
             :
-            <div className='dragon-details-card'>
-                <h1 className="title">Detalhes do dragão {data.name}:</h1>
-                <div className='dragon-details-inputs'>
+            <div className='dragon-details-card loading-transition'>
+                <h1>Detalhes do dragão {data.name}:</h1>
+                <div className='inputs'>
                     <DragonInfo label={"Data de criação: "} data={data.createdAt} />
                     <DragonInfo label={"Nome: "} data={data.name} />
                     <DragonInfo label={"Tipo: "} data={data.type} />
                     <DragonInfo label={"Histórias: "} data={data.histories} />
                 </div>
-                <div className='dragon-details-buttons'>
+                <div className='buttons'>
                     <Button onClick={() => navigate('/')} icon={faHouse} text="Voltar" />
                 </div>
             </div>

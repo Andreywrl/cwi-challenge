@@ -34,7 +34,7 @@ export default function Dashboard() {
         isLoading ?
             <LoadingScreen />
             :
-            <div className="dashboard_container  bg-glass">
+            <div className="dashboard  bg-glass loading-transition">
                 <div className="dashboard_fixed">
                     <h1>
                         Conheça os dragões mais incríveis

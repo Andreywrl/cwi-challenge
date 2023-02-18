@@ -1,4 +1,4 @@
-.dashboard_container {
+.dashboard {
     border-radius: 8px;
     padding: 1em;
     border: 2px solid black;
@@ -14,13 +14,18 @@
     flex-direction: column;
 }
 
-.dragon_handler_card {
+.dashboard_fixed h3 {
+    margin-bottom: .5em;
+}
+
+.dragon_card {
     padding: .5em;
     background-color: white;
     border-radius: 8px;
 }
 
-.dragon_handler_buttons {
+.buttons {
+    margin-top: 1em;
     display: flex;
     justify-content: space-between;
 }
@@ -31,6 +36,7 @@
 }
 
 .description {
+    margin-bottom: 1em;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -41,12 +47,12 @@
     margin: 8px 8px;
 }
 
-.signOut-button{
+.signOut-button {
     margin-top: 1em;
 }
 
 @media (min-width: 600px) {
-    .dashboard_container {
+    .container {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -56,7 +62,7 @@
 }
 
 @media (min-width: 900px) {
-    .dashboard_container {
+    .container {
         grid-template-columns: repeat(3, 1fr);
     }
 

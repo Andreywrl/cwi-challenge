@@ -46,8 +46,8 @@ export default function DragonHandler({ dragon, refresh }) {
     };
 
     return (
-        <div className="dragon_handler_card">
-            <div className="dragon_handler_content">
+        <div className="dragon_card">
+            <div>
 
                 <DragonDescription label="Data de criação: " data={dragon.createdAt} />
 
@@ -58,20 +58,20 @@ export default function DragonHandler({ dragon, refresh }) {
                 <DragonDescription label="Historias: " input value={histories} onChange={e => setHistories(e.target.value)} />
 
             </div>
-            <div className="dragon_handler_buttons">
-                <Button className="button-view"
+            <div className="buttons">
+                <Button 
                     icon={faMagnifyingGlass}
                     text="Visualizar"
                     onClick={() => navigate(`/DragonDetails/${id}`)}
                 />
 
-                <Button className="button-view"
+                <Button 
                     icon={faPen}
                     text="Editar"
                     onClick={() => handleEditDragon()}
                 />
 
-                <Button className="button-view"
+                <Button 
                     icon={faTrash}
                     text="Excluir"
                     onClick={() => handleDeleteDragon()}

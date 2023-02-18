@@ -6,6 +6,7 @@ import { Form, Formik } from "formik";
 import ValidationSchema from "../../components/validation/ValidationSchema";
 import LoginField from "../../components/LoginField";
 import { useCallback } from "react";
+import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 
 export default function LoginCard() {
 
@@ -28,9 +29,9 @@ export default function LoginCard() {
     }, []);
 
     return (
-        <div className="login_card">
-            <img className="login-logo" src={dragonLogo} alt="Logo redonda na tela de login, contendo o texto 'Dragons'." />
-            <p className="login_description">
+        <div className="login_card loading-transition">
+            <img src={dragonLogo} alt="Logo redonda na tela de login, contendo o texto 'Dragons'." />
+            <p className="description">
                 Conheça os mais incríveis dragões!
             </p>
             <Formik
@@ -49,7 +50,7 @@ export default function LoginCard() {
 
                         <LoginField password placeholder="Senha" props={{ errors, touched }} />
 
-                        <Button type="submit" className="login_button" onClick={() => handleSubmit()} text="Entrar" />
+                        <Button icon={faRightToBracket} type="submit" className="login_button" onClick={() => handleSubmit()} text="Entrar" />
                     </Form>
                 )}
             </Formik>

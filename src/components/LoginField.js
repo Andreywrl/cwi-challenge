@@ -4,7 +4,7 @@ export default function LoginField({ props, placeholder, user, password }) {
 
     return (
         <>
-            <Field className="login_field"
+            <Field className="field"
                 name={(user && 'user') || (password && 'password')}
                 type={(password && 'password')}
                 autoComplete="on"
@@ -12,13 +12,13 @@ export default function LoginField({ props, placeholder, user, password }) {
             {
                 user ?
                     props.errors.user && props.touched.user ?
-                        <div className="login_warn">
+                        <div className="warning">
                             {props.errors.user}
                         </div>
                         : null
                     :
                     props.errors.password && props.touched.password ?
-                        <div className="login_warn">
+                        <div className="warning">
                             {props.errors.password}
                         </div>
                         : null

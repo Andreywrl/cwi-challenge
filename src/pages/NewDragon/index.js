@@ -39,9 +39,9 @@ export default function NewDragon() {
     };
 
     return (
-        <div className='new-dragon-card bg-glass'>
+        <div className='new-dragon-card bg-glass loading-transition'>
             <h1 className="title">Hora de gerar seu dragão!</h1>
-            <div className='new-dragon-inputs'>
+            <div className='inputs'>
 
                 <InputCreate label="Nome: " value={name} onChange={e => setName(e.target.value)} />
 
@@ -50,7 +50,7 @@ export default function NewDragon() {
                 <InputCreate label="Histórias: " value={stories} onChange={e => setStories(e.target.value)} />
 
             </div>
-            <div className='new-dragon-buttons'>
+            <div className='buttons'>
 
                 <Button onClick={() => handleCreate()} icon={faPlus} text="Criar" />
 

@@ -7,11 +7,11 @@ export default function CreateDragon() {
     const navigate = useNavigate();
 
     return (
-        <div className="dashboard_fixed dragon_handler_card">
+        <div className="dashboard_fixed dragon_card">
             <h3>
                 Gostaria de criar um novo dragão?
             </h3>
-            <Button className="button-view"
+            <Button
                 icon={faPlus}
                 text="Criar meu dragão"
                 onClick={() => { navigate('/NewDragon') }}

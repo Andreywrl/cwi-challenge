@@ -4,12 +4,12 @@
     align-items: flex-start;
 }
 
-.layout_content_centralizer {
+.content_centralizer {
     max-width: 1280px;
     margin-top: 5em;
 }
 
-.layout_header_centralizer{
+.header_centralizer{
     width: 100vw;
     height: 5em;
     position: fixed;
@@ -21,7 +21,7 @@
     border-bottom: 3px solid black;
 }
 
-.layout_header_content{
+.header_content{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,7 @@
     margin: 0 1em;
 }
 
-.layout_header_img{
+.header_img{
     width: 4em;
     border-radius: 50%;
 }

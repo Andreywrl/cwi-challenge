@@ -10,10 +10,10 @@ export default function Header() {
     const { user, signOut } = useAuth();
 
     return (user &&
-        <div className="layout_header_centralizer" >
-            <div className="layout_header_content" >
+        <div className="header_centralizer" >
+            <div className="header_content" >
                 <Link to={'/'}>
-                    <img className="layout_header_img" src={dragonLogo} alt="Logo redonda na tela de login, contendo o texto 'Dragons'." />
+                    <img className="header_img" src={dragonLogo} alt="Logo redonda na tela de login, contendo o texto 'Dragons'." />
                 </Link>
 
                 <Button

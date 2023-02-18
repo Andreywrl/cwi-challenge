@@ -20,9 +20,9 @@ Ao visualizar esta tela pela primeira vez, o usuário poderá inserir suas crede
 
 Para que esta fosse a única tela disponível caso o usuário não estivesse logado, foi criado um componente que verifica se há dados de usuário no contexto de autenticação. Caso existam, o usuário é automaticamente redirecionado para a tela do dashboard, caso contrário, visualizará apenas a tela de login.
 
-Para evitar que o login fosse necessário toda vez que o usuário recarregasse a página, decidi salvar suas informações em uma variável no localStorage. A existencia desta sempre será consultada quando a aplicação iniciar, a variável será modificada quando o usuário efetuar um login e será excluída quando fizer logout.
+Para evitar que o login fosse necessário toda vez que o usuário recarregasse a página, decidi salvar suas informações em uma variável no localStorage. A existencia desta sempre será consultada quando a aplicação iniciar, será criada quando o usuário efetuar um login e será excluída quando fizer logout.
 
-Para tornar a criação do formulário de login algo mais prático e de fácil leitura para o próximo desenvolvedor, utilizei as libs Formik e Yup. Estas proporcionam uma "simplificação" do formulário, já com errorHandlers próprios. 
+Para tornar a criação do formulário de login algo mais prático e de fácil leitura para o próximo desenvolvedor, utilizei as libs Formik e Yup. Estas proporcionam uma "simplificação" do formulário, já com schemas e errorHandlers próprios. 
 
 ##### Features:
 * Form com Formik e Yup;
@@ -42,7 +42,7 @@ Credenciais de acesso no início e no fim deste documento.
 #### Os nomes devem estar em ordem alfabética.
 
 Nesta tela, serão exibidos, em ordem alfabética, os dragões disponíveis para modificações na API.
-Utilizei a lib Axios para tornar prática a integração com APIS. 
+Utilizei a lib Axios para tornar prática a integração com APIs. 
 
 #### A partir da lista, deverá ser possível remover e alterar as informações dos dragões.
 
@@ -55,10 +55,10 @@ No bottom do card, estão presentes três botões, sendo um para visualizar os d
 ### Uma página com os detalhes de um dragão específico:
 
 #### Os seguintes dados devem ser apresentados na página:
-##### Data de criação;
-##### Nome;
-##### Tipo.
-##### Uma página para cadastro de dragões:
+* Data de criação;
+* Nome;
+* Tipo.
+* Uma página para cadastro de dragões:
 
 Ao clicar no botão "Visualizar", o usuário será redirecionado para uma tela de visualização de detalhes de um dragão. Neste ambiente, estarão disponíveis apenas dados relacionados ao dragão indicado na tela anterior, através de um ID. Este foi utilizado como parâmetro em uma requisição à API, que retornou seus detalhes.
 
@@ -79,6 +79,6 @@ Este projeto está sendo visualizado em meu repositório público do GitHub, int
 
 ## Credenciais de Acesso:
 
-Usuário: tester
-Senha: t35t3r
+Usuário: **tester**
 
+Senha: **t35t3r**

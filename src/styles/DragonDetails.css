@@ -5,12 +5,16 @@
     margin: 1em;
 }
 
-.dragon-details-inputs {
+.dragon-details-card h1 {
+    margin: 1em 1em;
+}
+
+.inputs {
     width: 90%;
     margin: auto;
 }
 
-.dragon-details-field {
+.field {
     margin-bottom: 1.5em;
     display: flex;
     justify-content: start;
@@ -18,8 +22,7 @@
     flex-direction: row;
 }
 
-.dragon-details-buttons {
-    border-radius: 8px;
+.dragon-details-card .buttons {
     padding: .5em;
     display: flex;
     justify-content: center;
@@ -28,11 +31,6 @@
 
 .button-icon {
     padding-right: .25em;
-    color: white;
-}
-
-.title {
-    margin: 1em 1em;
 }
 
 .label {
