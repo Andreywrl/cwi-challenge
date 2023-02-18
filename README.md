@@ -11,7 +11,7 @@ Usuário: **tester**
 Senha: **@t35t3r10**
 
 ## Preview do projeto:
-![Gif apresentando o projeto](https://drive.google.com/file/d/1ln5FDyfuh0xTwsNwlLO3_6XKvdKPphXm/view?usp=sharing)
+![Gif apresentando o projeto](./src/assets/Dragons.gif)
 
 ## Descrição do projeto:
 
