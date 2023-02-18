@@ -82,3 +82,7 @@ Este projeto está sendo visualizado em meu repositório público do GitHub, int
 Usuário: **tester**
 
 Senha: **@t35t3r10**
+
+
+### Obrigado por chegar até aqui!
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
